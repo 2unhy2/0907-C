@@ -8,7 +8,7 @@ int main(void) {
 	double y = 0;
 	int count = 0, circle = 0;
 	int percent = 0;
-	//double pi;
+	double pi;
 	srand(time(NULL));
 
 	while (count < 100000) {
@@ -19,10 +19,12 @@ int main(void) {
 		if ((x * x) + (y * y) <= 1){
 			circle++;
 		}
+		pi = 4.0 * circle / (count + 1);
+
 		percent = count / 1000;
-		//pi = ;
-		printf("%d%%진행... pi = %lf: %", percent, (circle / count) * 4);
-		printf("\n");
+		
+		printf("%d%%진행... pi = %f: \n", percent, pi);
+	
 	}
 	return 0;
 
