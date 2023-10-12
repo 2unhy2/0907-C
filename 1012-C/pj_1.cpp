@@ -18,17 +18,3 @@ int main() {
 
 
 
-//#include<stdio.h>
-//void swap(int a,int b);
-//
-//int main(void) {
-//	int a = 13;
-//	int b = 31;
-//	int* ptr1 = &a;
-//	int* ptr2 = &b;
-//
-//	printf("swap()함수 호출 전 : a값 %d b값 %d", a, b);
-//}
-//void swap(int a,int b) {
-//
-//}
