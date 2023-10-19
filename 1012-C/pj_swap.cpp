@@ -22,7 +22,7 @@ int main() {
 
 		printf(" %d ", arr[i]);
 	}
-	printf("%d", &arr[5]);
+	
 	printf("\n");
 	sort(arr);
 	
