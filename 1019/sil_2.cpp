@@ -24,20 +24,14 @@ int main() {
 		printf("학생 # %d-%d 학번 입력", count, i + 1);
 		scanf_s("%d", &(score[i].sno));
 		printf("학생 # %d-%d 이름 입력", count, i + 1);
-		scanf_s("%d", &score[i].name);
+		scanf_s("%s", score[i].name,10);
 		printf("학생 # %d-%d 성적 입력", count, i + 1);
 		scanf_s("%d", &score[i].score);
-		//sum += score[i];
+		sum += score[i].score;
 	}
 	printf("총점 : %d\n", sum);
 
-	for (int k = 0;k < count;k++) {
-		printf("학생 # %d-%d 성적 출력 : %d \n ", count, k + 1, score[k]);
-
-
-	}
-	p = sum / count;
-	printf("평균 점수 : %.2f", p);
+	
 	free(score);
 
 	return 0;
